@@ -9,6 +9,7 @@ Public Class Car
     Private carPrice As Double = 0D
     Private carNewStatus As Boolean = False
 
+#Region "Constructors"
     Public Sub New()
         carCount += 1
         carIdentificationNumber = carCount
@@ -19,10 +20,12 @@ Public Class Car
         carMake = make
         carModel = model
         carYear = year
-        carPrice = price
+        carPrice = Math.Round(price, 2)
         carNewStatus = status
     End Sub
+#End Region
 
+#Region "Properties"
     Public ReadOnly Property Count() As Integer
         Get
             Return carCount
@@ -79,8 +82,12 @@ Public Class Car
             carNewStatus = value
         End Set
     End Property
+#End Region
 
+#Region "Methods"
     Public Function GetCarData() As String
-        Return "The car's ID is " & carIdentificationNumber.ToString() & ". The car's make is " & carMake & ". The car's model is " & carModel & ". The car's year is " & carYear & ". The car's price is $" & carPrice & ". The car is " & If(carNewStatus = True, "new.", "used.").ToString()
+        Return "The car's ID is " & carIdentificationNumber.ToString() & ". The car's make is " & carMake & ". The car's model is " & carModel & ". The car's year is " & carYear & ". The car's price is " & carPrice.ToString("c") & ". The car is " & If(carNewStatus = True, "new.", "used.").ToString()
     End Function
+#End Region
+
 End Class

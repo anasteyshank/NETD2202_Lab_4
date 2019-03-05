@@ -10,3 +10,15 @@ D:\Apps\2nd Semester\NETD\Programs VB\Lab_4_Car_Inventory\Lab_4_Car_Inventory\ob
 D:\Apps\2nd Semester\NETD\Programs VB\Lab_4_Car_Inventory\Lab_4_Car_Inventory\obj\Debug\Lab_4_Car_Inventory.exe
 D:\Apps\2nd Semester\NETD\Programs VB\Lab_4_Car_Inventory\Lab_4_Car_Inventory\obj\Debug\Lab_4_Car_Inventory.xml
 D:\Apps\2nd Semester\NETD\Programs VB\Lab_4_Car_Inventory\Lab_4_Car_Inventory\obj\Debug\Lab_4_Car_Inventory.pdb
+D:\Apps\Git\NETD2202_Lab_4\Lab_4_Car_Inventory\bin\Debug\Lab_4_Car_Inventory.exe.config
+D:\Apps\Git\NETD2202_Lab_4\Lab_4_Car_Inventory\bin\Debug\Lab_4_Car_Inventory.exe
+D:\Apps\Git\NETD2202_Lab_4\Lab_4_Car_Inventory\bin\Debug\Lab_4_Car_Inventory.pdb
+D:\Apps\Git\NETD2202_Lab_4\Lab_4_Car_Inventory\bin\Debug\Lab_4_Car_Inventory.xml
+D:\Apps\Git\NETD2202_Lab_4\Lab_4_Car_Inventory\obj\Debug\Lab_4_Car_Inventory.vbprojAssemblyReference.cache
+D:\Apps\Git\NETD2202_Lab_4\Lab_4_Car_Inventory\obj\Debug\Lab_4_Car_Inventory.frmCarInventory.resources
+D:\Apps\Git\NETD2202_Lab_4\Lab_4_Car_Inventory\obj\Debug\Lab_4_Car_Inventory.Resources.resources
+D:\Apps\Git\NETD2202_Lab_4\Lab_4_Car_Inventory\obj\Debug\Lab_4_Car_Inventory.vbproj.GenerateResource.cache
+D:\Apps\Git\NETD2202_Lab_4\Lab_4_Car_Inventory\obj\Debug\Lab_4_Car_Inventory.vbproj.CoreCompileInputs.cache
+D:\Apps\Git\NETD2202_Lab_4\Lab_4_Car_Inventory\obj\Debug\Lab_4_Car_Inventory.exe
+D:\Apps\Git\NETD2202_Lab_4\Lab_4_Car_Inventory\obj\Debug\Lab_4_Car_Inventory.xml
+D:\Apps\Git\NETD2202_Lab_4\Lab_4_Car_Inventory\obj\Debug\Lab_4_Car_Inventory.pdb

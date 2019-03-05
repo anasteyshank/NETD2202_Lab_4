@@ -49,7 +49,7 @@ Partial Class frmCarInventory
         'lblMake
         '
         Me.lblMake.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblMake.Location = New System.Drawing.Point(34, 9)
+        Me.lblMake.Location = New System.Drawing.Point(34, 11)
         Me.lblMake.Name = "lblMake"
         Me.lblMake.Size = New System.Drawing.Size(88, 32)
         Me.lblMake.TabIndex = 0
@@ -59,7 +59,7 @@ Partial Class frmCarInventory
         'lblModel
         '
         Me.lblModel.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblModel.Location = New System.Drawing.Point(34, 41)
+        Me.lblModel.Location = New System.Drawing.Point(34, 43)
         Me.lblModel.Name = "lblModel"
         Me.lblModel.Size = New System.Drawing.Size(88, 32)
         Me.lblModel.TabIndex = 2
@@ -69,7 +69,7 @@ Partial Class frmCarInventory
         'lblYear
         '
         Me.lblYear.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblYear.Location = New System.Drawing.Point(34, 73)
+        Me.lblYear.Location = New System.Drawing.Point(34, 75)
         Me.lblYear.Name = "lblYear"
         Me.lblYear.Size = New System.Drawing.Size(88, 32)
         Me.lblYear.TabIndex = 4
@@ -79,7 +79,7 @@ Partial Class frmCarInventory
         'lblPrice
         '
         Me.lblPrice.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPrice.Location = New System.Drawing.Point(34, 105)
+        Me.lblPrice.Location = New System.Drawing.Point(34, 107)
         Me.lblPrice.Name = "lblPrice"
         Me.lblPrice.Size = New System.Drawing.Size(88, 32)
         Me.lblPrice.TabIndex = 6
@@ -93,7 +93,7 @@ Partial Class frmCarInventory
         Me.cmbMake.ForeColor = System.Drawing.Color.Black
         Me.cmbMake.FormattingEnabled = True
         Me.cmbMake.Items.AddRange(New Object() {"Audi", "BMW", "Chevrolet", "Ford", "Honda", "Hyundai", "Infiniti", "Kia", "Lada", "Lexus", "Mercedes", "Nissan", "Tesla", "Toyota", "Volkswagen"})
-        Me.cmbMake.Location = New System.Drawing.Point(128, 11)
+        Me.cmbMake.Location = New System.Drawing.Point(128, 13)
         Me.cmbMake.Name = "cmbMake"
         Me.cmbMake.Size = New System.Drawing.Size(164, 30)
         Me.cmbMake.TabIndex = 1
@@ -105,7 +105,7 @@ Partial Class frmCarInventory
         Me.cmbYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbYear.FormattingEnabled = True
         Me.cmbYear.Items.AddRange(New Object() {"1960", "1961", "1962", "1963", "1964", "1965", "1966", "1967", "1968", "1969", "1970", "1971", "1972", "1973", "1974", "1975", "1976", "1977", "1978", "1979", "1980", "1981", "1982", "1983", "1984", "1985", "1986", "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"})
-        Me.cmbYear.Location = New System.Drawing.Point(128, 73)
+        Me.cmbYear.Location = New System.Drawing.Point(128, 75)
         Me.cmbYear.Name = "cmbYear"
         Me.cmbYear.Size = New System.Drawing.Size(164, 30)
         Me.cmbYear.TabIndex = 5
@@ -114,7 +114,7 @@ Partial Class frmCarInventory
         'txtModel
         '
         Me.txtModel.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtModel.Location = New System.Drawing.Point(128, 43)
+        Me.txtModel.Location = New System.Drawing.Point(128, 45)
         Me.txtModel.Name = "txtModel"
         Me.txtModel.Size = New System.Drawing.Size(164, 28)
         Me.txtModel.TabIndex = 3
@@ -123,7 +123,7 @@ Partial Class frmCarInventory
         'txtPrice
         '
         Me.txtPrice.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtPrice.Location = New System.Drawing.Point(128, 105)
+        Me.txtPrice.Location = New System.Drawing.Point(128, 107)
         Me.txtPrice.Name = "txtPrice"
         Me.txtPrice.Size = New System.Drawing.Size(164, 28)
         Me.txtPrice.TabIndex = 7
@@ -134,7 +134,7 @@ Partial Class frmCarInventory
         Me.chkNew.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.chkNew.AutoSize = True
         Me.chkNew.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.chkNew.Location = New System.Drawing.Point(67, 138)
+        Me.chkNew.Location = New System.Drawing.Point(67, 140)
         Me.chkNew.Name = "chkNew"
         Me.chkNew.Size = New System.Drawing.Size(76, 28)
         Me.chkNew.TabIndex = 9
@@ -150,7 +150,7 @@ Partial Class frmCarInventory
         Me.lvwCars.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.colNew, Me.colID, Me.colMake, Me.colModel, Me.colYear, Me.colPrice})
         Me.lvwCars.FullRowSelect = True
         Me.lvwCars.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
-        Me.lvwCars.Location = New System.Drawing.Point(16, 172)
+        Me.lvwCars.Location = New System.Drawing.Point(16, 174)
         Me.lvwCars.MultiSelect = False
         Me.lvwCars.Name = "lvwCars"
         Me.lvwCars.Size = New System.Drawing.Size(509, 286)
@@ -193,16 +193,16 @@ Partial Class frmCarInventory
         '
         Me.lblError.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblError.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblError.Location = New System.Drawing.Point(16, 461)
+        Me.lblError.Location = New System.Drawing.Point(16, 463)
         Me.lblError.Name = "lblError"
-        Me.lblError.Size = New System.Drawing.Size(509, 120)
+        Me.lblError.Size = New System.Drawing.Size(509, 109)
         Me.lblError.TabIndex = 11
         Me.CarToolTip.SetToolTip(Me.lblError, "Displays error messages")
         '
         'btnEnter
         '
         Me.btnEnter.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnEnter.Location = New System.Drawing.Point(204, 592)
+        Me.btnEnter.Location = New System.Drawing.Point(204, 583)
         Me.btnEnter.Name = "btnEnter"
         Me.btnEnter.Size = New System.Drawing.Size(103, 33)
         Me.btnEnter.TabIndex = 12
@@ -214,7 +214,7 @@ Partial Class frmCarInventory
         '
         Me.btnReset.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.btnReset.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btnReset.Location = New System.Drawing.Point(313, 592)
+        Me.btnReset.Location = New System.Drawing.Point(313, 583)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(103, 33)
         Me.btnReset.TabIndex = 13
@@ -225,7 +225,7 @@ Partial Class frmCarInventory
         'btnExit
         '
         Me.btnExit.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnExit.Location = New System.Drawing.Point(422, 592)
+        Me.btnExit.Location = New System.Drawing.Point(422, 583)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(103, 33)
         Me.btnExit.TabIndex = 14
@@ -255,10 +255,11 @@ Partial Class frmCarInventory
         Me.Controls.Add(Me.lblModel)
         Me.Controls.Add(Me.lblMake)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(561, 679)
         Me.MinimizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(561, 660)
+        Me.MinimumSize = New System.Drawing.Size(561, 679)
         Me.Name = "frmCarInventory"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Car Inventory"
