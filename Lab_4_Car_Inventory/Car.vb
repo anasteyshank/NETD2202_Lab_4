@@ -6,7 +6,7 @@ Public Class Car
     Private carMake As String = String.Empty
     Private carModel As String = String.Empty
     Private carYear As String = String.Empty
-    Private carPrice As Double = 0D
+    Private carPrice As Double = 0.0
     Private carNewStatus As Boolean = False
 
 #Region "Constructors"

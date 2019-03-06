@@ -1,10 +1,13 @@
 ﻿Option Strict On
 Public Class frmCarInventory
 
+#Region "Declarations"
     Private carList As New SortedList
     Private selectedCarIdentificationNumber As String = String.Empty
     Private editMode As Boolean = False
+#End Region
 
+#Region "Event Handlers"
     Private Sub btnEnter_Click(sender As Object, e As EventArgs) Handles btnEnter.Click
 
         Dim car As Car
@@ -45,6 +48,53 @@ Public Class frmCarInventory
         End If
     End Sub
 
+    Private Sub lvwCars_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lvwCars.SelectedIndexChanged
+
+        For Each carItem As ListViewItem In Me.lvwCars.Items
+            carItem.BackColor = Color.White
+        Next
+
+        Const subItemIndex As Integer = 1
+
+        selectedCarIdentificationNumber = lvwCars.Items(lvwCars.FocusedItem.Index).SubItems(subItemIndex).Text
+
+        Dim car As Car = CType(carList.Item(selectedCarIdentificationNumber), Car)
+
+        cmbMake.Text = car.Make()
+        txtModel.Text = car.Model()
+        cmbYear.Text = car.Year()
+        txtPrice.Text = car.Price().ToString()
+        chkNew.Checked = car.NewStatus()
+
+        Me.lvwCars.FocusedItem.BackColor = Color.LightBlue
+        Me.lvwCars.FocusedItem.Selected = False
+
+    End Sub
+
+    Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
+        Reset()
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub lvwCars_ItemCheck(sender As Object, e As ItemCheckEventArgs) Handles lvwCars.ItemCheck
+        If (editMode = False) Then
+            e.NewValue = e.CurrentValue
+        End If
+    End Sub
+
+    Private Sub frmCarInventory_Click(sender As Object, e As EventArgs) Handles MyBase.Click
+        For Each carItem As ListViewItem In Me.lvwCars.Items
+            carItem.BackColor = Color.White
+        Next
+        selectedCarIdentificationNumber = String.Empty
+    End Sub
+
+#End Region
+
+#Region "Functions/Methods"
     Private Function IsValidInput() As Boolean
 
         Dim returnValue As Boolean = True
@@ -91,38 +141,13 @@ Public Class frmCarInventory
         cmbMake.Select()
         editMode = False
 
+        For Each carItem As ListViewItem In Me.lvwCars.Items
+            carItem.BackColor = Color.White
+        Next
+
         selectedCarIdentificationNumber = String.Empty
     End Sub
 
-    Private Sub lvwCars_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lvwCars.SelectedIndexChanged
-
-        Const subItemIndex As Integer = 1
-
-        selectedCarIdentificationNumber = lvwCars.Items(lvwCars.FocusedItem.Index).SubItems(subItemIndex).Text
-
-        Dim car As Car = CType(carList.Item(selectedCarIdentificationNumber), Car)
-
-        cmbMake.Text = car.Make()
-        txtModel.Text = car.Model()
-        cmbYear.Text = car.Year()
-        txtPrice.Text = car.Price().ToString()
-        chkNew.Checked = car.NewStatus()
-
-
-    End Sub
-
-    Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
-        Reset()
-    End Sub
-
-    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
-        Me.Close()
-    End Sub
-
-    Private Sub lvwCars_ItemCheck(sender As Object, e As ItemCheckEventArgs) Handles lvwCars.ItemCheck
-        If (editMode = False) Then
-            e.NewValue = e.CurrentValue
-        End If
-    End Sub
+#End Region
 
 End Class
