@@ -22,5 +22,98 @@ Lab_4_Car_Inventory
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="M:Lab_4_Car_Inventory.Car.#ctor">
+ <summary>
+ Default constructor - creates a new car object
+ </summary>
+</member>
+<member name="M:Lab_4_Car_Inventory.Car.#ctor(System.String,System.String,System.String,System.Double,System.Boolean)">
+ <summary>
+ Parameterized constructor - creates a new car object
+ </summary>
+ <param name="make"></param>
+ <param name="model"></param>
+ <param name="year"></param>
+ <param name="price"></param>
+ <param name="status"></param>
+</member>
+<member name="P:Lab_4_Car_Inventory.Car.Count">
+ <summary>
+ Count ReadOnly Property - gets the number of cars that have been instantiated
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Lab_4_Car_Inventory.Car.IdentificationNumber">
+ <summary>
+ IdentificationNumber ReadOnly Property - gets a car's id
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Lab_4_Car_Inventory.Car.Make">
+ <summary>
+ Make Property - gets and sets a car's make
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Lab_4_Car_Inventory.Car.Model">
+ <summary>
+ Make Property - gets and sets a car's model
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Lab_4_Car_Inventory.Car.Year">
+ <summary>
+ Make Property - gets and sets a car's year
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Lab_4_Car_Inventory.Car.Price">
+ <summary>
+ Make Property - gets and sets a car's price
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Lab_4_Car_Inventory.Car.NewStatus">
+ <summary>
+ Make Property - gets and sets a car's status
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Lab_4_Car_Inventory.Car.GetCarData">
+ <summary>
+ GetCarData is a function that returns information about a car
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Lab_4_Car_Inventory.frmCarInventory.btnEnter_Click(System.Object,System.EventArgs)">
+ <summary>
+ Click event of the btnEnter button that validates user input. If it's valid,
+ a Car object will be either created or updated. Then user input will be displayed 
+ in the ListView.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab_4_Car_Inventory.frmCarInventory.lvwCars_SelectedIndexChanged(System.Object,System.EventArgs)">
+ <summary>
+ lvwCars_SelectedIndexChanged - when a row in the ListView control is selected, it will populate the fields for editing
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab_4_Car_Inventory.frmCarInventory.btnReset_Click(System.Object,System.EventArgs)">
+ <summary>
+ Click event of the Reset button that resets the form using the subroutine
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab_4_Car_Inventory.frmCarInventory.btnExit_Click(System.Object,System.EventArgs)">
+ <summary>
+ 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
 </members>
 </doc>
