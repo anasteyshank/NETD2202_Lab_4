@@ -110,10 +110,35 @@ Lab_4_Car_Inventory
 </member>
 <member name="M:Lab_4_Car_Inventory.frmCarInventory.btnExit_Click(System.Object,System.EventArgs)">
  <summary>
- 
+ Click event of the Exit button that exits the form
  </summary>
  <param name="sender"></param>
  <param name="e"></param>
+</member>
+<member name="M:Lab_4_Car_Inventory.frmCarInventory.lvwCars_ItemCheck(System.Object,System.Windows.Forms.ItemCheckEventArgs)">
+ <summary>
+ lvwCars_ItemCheck - used to prevent the user from checking the check box in the list view if it is not in edit mode
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab_4_Car_Inventory.frmCarInventory.frmCarInventory_Click(System.Object,System.EventArgs)">
+ <summary>
+ Click event of the frmCarInventory that resets the form if the item in the list view is not focused
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab_4_Car_Inventory.frmCarInventory.IsValidInput">
+ <summary>
+ IsValidInput - validates the data in each control to ensure that the user has entered appropriate values
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Lab_4_Car_Inventory.frmCarInventory.Reset">
+ <summary>
+ Resets the form to its initial state
+ </summary>
 </member>
 </members>
 </doc>

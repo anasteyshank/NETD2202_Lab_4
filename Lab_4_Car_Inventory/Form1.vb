@@ -33,10 +33,10 @@ Public Class frmCarInventory
                 ' create a new car object using a parameterized constructor
                 car = New Car(cmbMake.Text, txtModel.Text.Trim, cmbYear.Text, Convert.ToDouble(txtPrice.Text.Trim), chkNew.Checked)
                 ' add the car to the carList ]collection
-                carList.Add(car.IdentificationNumber.ToString(), car)
+                carList.Add(car.IdentificationNumber, car)
                 ' if the selected car identification number has a value, then it's an existing item
             Else
-                car = CType(carList.Item(selectedCarIdentificationNumber), Car)  ' get the car from the collection
+                car = CType(carList.Item(Convert.ToInt32(selectedCarIdentificationNumber)), Car)  ' get the car from the collection
                 car.Make() = cmbMake.Text        ' update the car's make
                 car.Model() = txtModel.Text.Trim ' update the car's model
                 car.Year() = cmbYear.Text        ' update the car's year
@@ -84,7 +84,7 @@ Public Class frmCarInventory
 
         selectedCarIdentificationNumber = lvwCars.Items(lvwCars.FocusedItem.Index).SubItems(subItemIndex).Text  ' get the car's id
 
-        Dim car As Car = CType(carList.Item(selectedCarIdentificationNumber), Car)  ' get the car from the collection using the car's id
+        Dim car As Car = CType(carList.Item(Convert.ToInt32(selectedCarIdentificationNumber)), Car)  ' get the car from the collection using the car's id
 
         cmbMake.Text = car.Make()   ' get the car's make and set the combo box
         txtModel.Text = car.Model() ' get the car's model and set the text box
@@ -134,7 +134,9 @@ Public Class frmCarInventory
     Private Sub frmCarInventory_Click(sender As Object, e As EventArgs) Handles MyBase.Click
         ' if the item in the list view is not focused, reset the form
         If (selectedCarIdentificationNumber <> String.Empty) Then
-            Reset()
+            For Each carItem As ListViewItem In Me.lvwCars.Items
+                carItem.BackColor = Color.White
+            Next
         End If
     End Sub
 
